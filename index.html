@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./dist/output.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap'); 
+  </style>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-[#F5F5F5]">
+  <header>
+    <nav
+      class="w-full py-3 fixed top-0 bg-[#F5F5F5] drop-shadow-md bg-section z-10 px-0 md:px-16 pt-6 md:pt-8">
+      <!--Flex Container-->
+      <div class="flex justify-between">
+        <!--Logo-->
+        <div class="cursor-pointer">
+          <a id="Home" href=""><img class="md:w-44 px-5" src="img/Hynitry Wordmark Logo Colour.png" alt=""></a>
+        </div>
+        <div class="pr-0 md:pr-96">
+        <ul class="hidden md:flex md:gap-6 text-card text-[#0E0505] cursor-pointer font-semibold text-base">
+          <a class="hover:bg-sub-text px-2 py-2" href="#Home">Home</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#About">About</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Services">Services</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Contact Us">Contact</a>
+        </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="px-5">
+          <li class="active"><a href="#Home"
+              class="block text-lg px-2 hover:bg-[#2330A3] hover:opacity-50 py-1 pt-4  font-semibold">Home</a></li>
+          <li><a href="#About"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">About</a></li>
+          <li><a href="#Services"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Services</a>
+          </li>
+          <li><a href="#Contact Us"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+  </header>
+  <section class="text-[#F3F3F3] bg-[#F4F9FB] md:pt-24 md:pb-16 md:pl-10">
+    <div class="flex flex-col-reverse md:flex-row justify-center gap-12 items-center">
+      <!-- content-->
+      <div class="flex-1 relative px-10 pt-3 md:pt-20">
+        <div class="flex pb-8 justify-center md:justify-start">
+          <img src="img/Line 1.png" alt="">
+        <p class="font-bold text-xl text-[#77BCD9] pl-3">Digital Solution</p>
+        </div>
+        <h1 class="font-bold md:pt-3 text-center md:pb-5 md:font-bold text-5xl md:text-6xl md:text-left text-[#0D1D26]">The One Solution to your  Business Growth</h1>
+        <div class="absolute right-16 bottom-64 md:top-64">
+        <img src="img/Vector.png" alt="">
+      </div>
+        <p class="font-normal pt-12 md:pt-3 text-center text-lg md:text-xl mb-3 mt-2 md:text-left text-[#6F6F79]">With over 5.4million new businesses founded annually. Here <br> is a modern solution to business growth.</p>
+        <div class="flex justify-center md:justify-start cursor-pointer pt-6">
+          <button class="font-normal text-base rounded-md bg-[#0D1D26] px-6 py-3">Find Out How</button>
+        </div>
+      </div>
+      <!--image-->
+      <div class="flex justify-center flex-1 pr-2">
+        <img class="mt-20 md:mt-0 h-full w-full" src="img/Group 1000004211.png"
+          alt="">
+      </div>
+    </div>
+  </section>
+  <section class="px-10 pt-6 md:pt-10 pb-16" id="#">
+    <div class="flex flex-col md:flex-row justify-center">
+      <div class="flex-1 md:px-10">
+        <h2 class="font-bold text-5xl pb-8 pt-20 text-center md:text-start">Glad you took the bold<br> step!</h2>
+        <p class="text-center md:text-start font-normal text-xl pb-16">Ever thought of a group of people passionate about you and your brand growth? That’s who we are, A team of creatives who came together to see you grow </p>
+        <div class="pl-20 md:pl-0 font-normal text-xl text-white">
+        <button class="bg-[#1B3A4C] px-5 py-3 rounded-md">Contact Us</button>
+      </div>
+      </div>
+
+      <div class="flex-1 h-full pt-10">
+        <img src="img/work 1.png" alt="">
+      </div>
+      </div>
+      </div>
+  </section>
+
+  <section class="pt-5 md:pt-16 pb-5 md:pb-16">
+    <div class="text-center md:text-start md:pl-24">
+    <h1 class="pt-10 font-bold text-5xl">Awesome Features</h1>
+    <p class="font-normal text-xl pt-4 pb-10">We are dedicated to helping you scale-up and be <br>the best in your field. </p>
+    </div>
+    <div class="pt-3 md:pt-7 px-5 md:px-24 grid md:grid-cols-3 rounded-md gap-8">
+      <div class="bg-[#F4F9FB] px-10 py-8">
+        <img src="img/Group 1000004215.png" alt="">
+        <h3 class="py-5 font-normal text-2xl">Design</h3>
+        <p class="font-normal text-lg">Great appealing visuals encourage and command your customer to buy from you. The greater your visuals and colorful appearance, the more attraction of potential customers.</p>
+      </div>
+      <div class="bg-[#F4F9FB] px-10 py-8">
+        <img src="img/Group 1000003964.png" alt="">
+        <h3 class="py-5 font-normal text-2xl">Strategy</h3>
+        <p class="font-normal text-lg">A modern website that consumes less data of your customers will keep them reading all that you do without a doubtful mind. Your website does the magic without consuming much user data.</p>
+      </div>
+      <div class="bg-[#F4F9FB] px-10 py-8">
+        <img src="img/Group 1000003957.png" alt="">
+        <h3 class="py-5 font-normal text-2xl">Marketing</h3>
+        <p class="font-normal text-lg">A modern website that consumes less data of your customers will keep them reading all that you do without a doubtful mind. Your website does the magic without consuming much user data.</p>
+      </div>
+      <div class="bg-[#F4F9FB] px-10 py-8">
+        <img src="img/Group 1000003941.png" alt="">
+        <h3 class="py-5 font-normal text-2xl">Development</h3>
+        <p class="font-normal text-lg">A modern website that consumes less data of your customers will keep them reading all that you do without a doubtful mind. Your website does the magic without consuming much user data.</p>
+      </div>
+      <div class="bg-[#F4F9FB] px-10 py-8">
+        <img src="img/Group 1000003934.png" alt="">
+        <h3 class="py-5 font-normal text-2xl">Automation</h3>
+        <p class="font-normal text-lg">A modern website that consumes less data of your customers will keep them reading all that you do without a doubtful mind. Your website does the magic without consuming much user data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:pt-16 pb-36">
+    <div class="pl-5 md:pl-24">
+      <h1 class="pt-7 md:pt-10 font-bold text-6xl">Meet the Team!</h1>
+      <p class="font-normal pb-10 text-sm md:text-lg pt-4">Meet the amazing people ready to generate more <br>sales & online confidence for you!</p>
+      </div>    
+      <div class="pt-3 md:pt-7 md:px-64 grid md:grid-cols-3 gap-6 md:gap-0 justify-items-center rounded-lg gap-">
+      <div class="bg-[#F4F9FB] shadow-md border border-[#EBEAED] py-8">
+        <div class="px-16 md:px-24">
+        <img src="img/Mask 3.png" alt="">
+        <h4 class="py-5 font-normal text-xl">Solo Samuel</h4>
+        <p class="font-normal text-sm text-black opacity-40">UI DESIGNER</p></div>
+      </div>
+      <div class="bg-[#F4F9FB] shadow-md border border-[#EBEAED] py-8">
+        <div class="px-16 md:px-24">
+        <img src="img/Mask 2.png" alt="">
+        <h4 class="py-5 font-normal text-xl">Daniel Tolani</h4>
+        <p class="font-normal text-sm text-black opacity-40">DEVELOPER</p></div>
+      </div>
+      <div class="bg-[#F4F9FB] shadow-md border border-[#EBEAED] py-8">
+        <div class="px-16 md:px-24">
+        <img src="img/Mask.png" alt="">
+        <h4 class="py-5 font-normal text-xl">Henry Adebayo</h4>
+        <p class="font-normal text-sm text-black opacity-40">FLUTTER DEVELOPER</p></div>
+      </div>
+      </div>
+      <div class="flex justify-center pt-10">
+        <button class="border border-[#1B3A4C] px-6 py-3 rounded-md font-normal text-base">View All</button>
+        </div>
+  </section>
+  
+<section class="bg-[#114667] py-5">
+<div class="flex text-white md:gap-16 relative pt-10 justify-center">
+  <div class="absolute -top-16 left-24">
+    <img src="img/Vector 2.png" alt="">
+  </div>  
+  <div class="absolute -bottom-24 md:-left-16">
+    <img src="img/Vector 1.png" alt="">
+  </div>  
+  <div class="absolute -top-20 md:-right-0">
+    <img src="img/Group 179.png" alt="">
+  </div>  
+  <div class="grid px-10">
+  <div>
+      <h2 class="font-normal justify-center text-6xl">1000+</h2>
+      <p class="font-normal text-base md:pl-8 pt-0 md:pt-6 pb-3 md:pb-3">Happy Clients</p>
+    </div>
+    <div>
+      <h2 class="font-semibold justify-center text-6xl">750+</h2>
+      <p class="font-normal text-base md:pl-2 pt-0 md:pt-6 md:pb-3 pb-3">Completed Projects</p>
+    </div>
+    <div>
+      <h2 class="font-normal justify-center text-6xl">500k+</h2>
+      <p class="font-normal md:pl-8 text-base pt-0 md:pt-6 md:pb-3 pb-3">Transactions</p>
+    </div>
+    <div>
+      <h2 class="font-normal justify-center text-6xl">6000+</h2>
+      <p class="font-normal md:pl-8 text-base pt-0 md:pb-3 pb-3">Customers</p>
+    </div>
+  </div>
+</section>
+  <section class="mt-16 md:mt-44">
+    <div class="text-center md:flex pb-5 justify-center">
+      <h1 class="px-4 md:px-0 font-normal text-5xl">Subcribe to Our Newsletter</h1>
+    </div>
+      <div class="flex justify-around px-8 md:px-0 pb-16 pt-5 md:pt-10">
+      <div class="mx-0 md:mx-96  flex gap-4 md:gap-32 bg-white px-8 py-3 md:py-6 rounded-xl">
+        <form class="placeholder:Enter your mail pt-3 md:pt-3" action="">Enter your mail</form>
+        <button class="bg-[#1B3A4C] px-3 md:px-8 py-2 rounded-lg text-white font-normal text-xl">Subscribe</button>
+      </div>
+      </div>
+  </section>
+
+  <section class="pt-5 md:pt-16 px-5 md:px-10 pb-8">
+    <div class="flex flex-col md:flex-row md:relative justify-center">
+      <div class="flex-1 px-5 md:px-10 md:pt-10">
+        <h1 class="font-bold text-3xl md:text-6xl pb-8">What Our Clients Say
+          <span class="text-[#1B3A4C] ">About Us</span></h1>
+          <p class="font-normal text-xl pb-10 md:pb-0">Our Client sends us bunch of smilies with our <br>services and we love them.</p>
+      </div>
+      <div class="flex-1 md:flex">
+        <img class="h-24 md:top-0 absolute z-30" src="img/Group 180.png" alt="">
+        <div class="md:px-10 pb-5 md:absolute md:right-28 rounded-lg mt-16 md:pt-16 pt-5 font-normal text-xl bg-white md:z-20 mb-10 md:mb-0">
+        <h2 class="pb-7 px-10 md:pb-0 pt-7 md:pt-0">“I love each and every service you people<br> rendered and till date i still enjoy the e-learning <br>platform your developed for my school” </h2>
+        <p class="px-10">Marvellous Daniel</p>
+        <p class="pt-1 px-10 font-normal text-sm">Head Mistress</p>
+      </div>
+      <div class="hidden md:flex border border-black text-black bg-[#66666614] opacity-50 rounded-lg px-16 py-3 pt-16 pr-16 mt-56 ml-96">
+        <p>David Jone</p>
+        <p class="pt-1">Head Mistress</p>
+        </div>
+      </div>
+      </div>
+  <div class="cursor-pointer px-8 md:px-16 pb-20">
+  <img class="h-12" src="img/button.png" alt=""> 
+  </div>  
+  </section>
+
+<section class="bg-[#114667] pt-16 pb-5 px-5 md:px-16">
+<div class="grid md:grid-cols-4 gap-8 text-white pb-8">
+  <div>
+    <img src="img/Hynitry Wordmark Logo White 1.png" alt="">
+    <p class="py-5 font-normal text-lg">We help business generation<br> generate more sales and online<br> confidence</p>
+    <ul class="flex gap-4">
+      <a href=""><li><img src="img/linkedin.png" alt=""></li></a>
+      <a href=""><li><img src="img/instagram.png" alt=""></li></a>
+      <a href=""><li><img src="img/twitter.png" alt=""></li></a>
+      <a href=""><li><img src="img/facebook.png" alt=""></li></a>
+    </ul>
+  </div>
+  <div class="md:pl-8">
+    <h1 class="font-normal text-2xl pb-5">Company</h1>
+    <ul class="font-normal text-lg">
+      <a href=""><li class="pb-3">About Us</li></a>
+      <a href=""><li class="pb-3">Services</li></a>
+      <a href=""><li class="pb-3">Community</li></a>
+      <a href=""><li class="pb-3">Testimonies</li></a>
+    </ul>
+  </div>
+  <div>
+    <h1 class="font-normal text-2xl pb-5">Support</h1>
+    <ul class="font-normal text-lg">
+      <a href=""><li class="pb-3">Help Center</li></a>
+      <a href=""><li class="pb-3">Customer Care</li></a>
+      <a href=""><li class="pb-3">Feedback</li></a>
+  </div>
+  <div>
+    <h1 class="font-normal text-2xl pb-5">Products</h1>
+    <ul class="font-normal text-lg">
+      <a href=""><li class="pb-3">Automated Attendance Software</li></a>
+      <a href=""><li class="pb-3">School Management System</li></a>
+      <a href=""><li class="pb-3">Bursary Software</li></a>
+  </div>
+</div>
+<div class="flex justify-center text-white font-normal text-base">
+<p>&copy;Abdussomad 2022. All right reserved</p>
+</div>
+</section>
+  
+  
+  
+</body>
+</html>
